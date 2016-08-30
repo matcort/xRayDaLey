@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="panel panel-default" > 
+    <br>
+    
+    
+    
+    
+     <div class="row">
+            
+            
+            
+            <div class="col-md-5">
+               
+            </div>
+            <div class="col-md-4">
+                
+               
+                <strong> <h3 >Nro. Ley Consultada: <%=@numero%></h3></strong>
+               
+            </div>
+            
+            <div class="col-md-1">
+                </div>
+            <div class="col-md-2">
+                <%= link_to " Comentar Ley", contacto_path, class: "btn btn-default glyphicon glyphicon-pencil" %>
+                </div>
+           
+            
+            
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="row">
+            
+            
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-7">
+              
+               
+                <%= image_tag "politicos/972.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/850.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/860.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/867.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/883.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/902.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/937.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                <%= image_tag "politicos/991.jpg", :alt => "177", :title => "177", :size => "70x70"%>
+                
+               
+            </div>
+        
+            
+            
+    </div>
+           
+    
+        
+        <div class="row">
+            
+            
+            <div>
+            <div class="col-md-6">
+                
+                
+                
+                <div class="panel panel-warning">
+                    <div class="panel-heading">Ley</div>
+                    <div class="panel-body panel-height "><%= @ley%></div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                
+                    <div class="panel-heading">Explicacion Simplificada</div>
+                    <div class="panel-body  panel-height"><%=@expl_simp%></div>
+                
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+                    
+                  

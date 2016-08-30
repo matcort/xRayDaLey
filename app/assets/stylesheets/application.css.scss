@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+   .navbar {
+		background-color: #558C89;
+		
+}
+
+	body {
+	
+		background-color: #74AFAD;
+		background-position: top left, top left;
+		background-repeat: repeat-x, repeat;
+		background-size: 100% 30em, auto;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 10pt;
+		  
+		color: #696969;
+		font-weight: 300;
+	    
+	    line-height: 2.25em;
+		padding-top: 1.5em;
+	
+
+	
+	}
+	
+h1, h2, h3 {
+  
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+
+
+
+#blanco{
+	padding: 0;
+	color: white;
+}
+
+.glyphicon{
+	top: -0.5px;
+	
+}
+
+.panel-height {
+  height: 5in; 
+   overflow-y: scroll;
+}
+
+iframe:focus { 
+    outline: none;
+}
+
+iframe[seamless] { 
+    display: block;
+}

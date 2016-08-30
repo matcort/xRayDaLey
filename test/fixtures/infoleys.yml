@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_ley: MyString
+  fecha: 2016-06-28 20:56:59
+  tipo: MyString
+  exp_simpl: MyText
+  cont_ley: MyText
+  proy_ley: MyText
+
+two:
+  numero_ley: MyString
+  fecha: 2016-06-28 20:56:59
+  tipo: MyString
+  exp_simpl: MyText
+  cont_ley: MyText
+  proy_ley: MyText

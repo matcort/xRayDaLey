@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="panel panel-default" > 
+    
+    
+   
+    
+    
+     <div class="row">
+            
+            
+            
+            <div class="col-md-5">
+               
+            </div>
+            <div class="col-md-4">
+                
+               
+              
+               
+            </div>
+           
+            
+            
+    </div>
+    
+    
+    
+    
+    
+    
+           
+    
+        
+        <div class="row">
+            
+            
+            <div>
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                
+                    <div class="panel-heading">Déjanos tu comentario</div>
+                    <div class="panel-body  panel-height">
+                        
+
+                    <%= form_for(@micropost) do |f| %>
+                    
+                    
+                      <%= f.label :Nombre %>
+                      <%= f.text_field :nombre, placeholder: "Escribir Nombre" %> 
+                       <%= f.label :Numero_Ley %>
+                      <%= f.text_field :num, placeholder: "Escribir Número Ley" %> 
+                      <div class="field">
+                      <%= f.label :Comentario %><br>
+                       <%= f.text_area :content, placeholder: "Escribir comentario", size: "60x10" %>
+                      </div>
+                     
+                      <%= f.submit "Aceptar", class: "btn button" %>
+                    <% end %>
+
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                
+                <div class="panel panel-warning">
+                    <div class="panel-heading">Comentarios</div>
+                    <div class="panel-body panel-height ">
+                        <div class="col-md-8">
+                            
+                              
+                              <ol class="microposts">
+                                <%= render @microposts %>
+                              </ol>
+                             
+                          </div>
+
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+                    
+                  

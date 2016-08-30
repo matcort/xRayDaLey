@@ -1,0 +1,44 @@
+rails g controller Contactos index 
+get  '/contacto',    to: 'contactos#index'
+index contacto cambiar interfaz
+rails generate model Micropost nombre:string content:text     
+rails generate controller Microposts
+crear _micropost.html.erb
+agregar en controlador de contacto @microposts = Micropost.all
+agregar entidad Micropost.create(nombre: "carlos", content:"hola como estas")
+en index.html de contacto poner
+modificar contacto.scss
+ agregar ruta
+  get 'contacto/new'
+ resources :contactos
+ resources :microposts
+ 
+ 
+ agregar esto
+  <div class="col-md-6">
+                <div class="panel panel-success">
+                
+                    <div class="panel-heading">Déjanos tu comentario</div>
+                    <div class="panel-body  panel-height">
+                        
+
+                    <%= form_for(@micropost) do |f| %>
+                      <%= f.label :Nombre %>
+                      <%= f.text_field :nombre %> 
+                      <div class="field">
+                        <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+                      </div>
+                      <%= f.submit "Aceptar", class: "btn button" %>
+                    <% end %>
+
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            
+            
+- escribir la funcion en micropost_controller para crear
+- ir a modelo y poner decreciente
